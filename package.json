@@ -1,0 +1,20 @@
+{
+  "name": "tarea",
+  "version": "1.0.0",
+  "description": "Desarollado en NodeJS, Express y postgress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FidelRada/Tarea.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FidelRada/Tarea/issues"
+  },
+  "homepage": "https://github.com/FidelRada/Tarea#readme"
+}
