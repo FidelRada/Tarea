@@ -1,0 +1,30 @@
+<%- include ../layouts/cabecera.ejs %>
+
+<div class="card text-white bg-primary mb-3" ">
+    <div class="card-header">¿ESTA SEGURO DE ELIMINAR ESTE DATO?</div>
+    <div class="card-body">
+        <h4 class="card-title">ID: <%= persona.ID %> </h4>
+        <h4 class="card-title">CI: <%= persona.CI %> </h4>
+        <h4 class="card-title">Nombre: <%= persona.Nombre +" "+persona.Paterno  +" "+persona.Materno %> </h4>
+        <h4 class="card-title">Telefono: <%= persona.Telefono %> </h4>
+        
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <form class="form-inline" method="post" action="persona/drop/<%= persona.ID %>">
+
+                <button class="btn btn-info" type="submit">Aceptar </button>
+
+            </form>
+        </div>
+
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <form class="form-inline" method="get" action="/persona %>">
+
+                <button class="btn btn-danger" type="submit">cancelar </button>
+
+            </form>
+        </div>
+
+    </div>
+  </div>
+
+<%- include ../layouts/pie.ejs %>

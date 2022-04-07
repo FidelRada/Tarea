@@ -1,0 +1,32 @@
+<%- include ../layouts/cabecera.ejs %>
+    <form action="/persona/save" method="post" >
+        <div class="form-group">
+            <label for="my-input">CI:</label>
+            <input id="CI" class="form-control" type="number" name="CI">
+        </div>
+
+        <div class="form-group">
+            <label for="my-input">Nombre:</label>
+            <input id="nombre" class="form-control" type="text" name="nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="my-input">Paterno:</label>
+            <input id="paterno" class="form-control" type="text" name="paterno">
+        </div>
+
+        <div class="form-group">
+            <label for="my-input">Materno:</label>
+            <input id="materno" class="form-control" type="text" name="materno">
+        </div>
+
+        <div class="form-group">
+            <label for="my-input">Telefono:</label>
+            <input id="telefono" class="form-control" type="text" name="telefono">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Crear</button>
+
+
+    </form>
+<%- include ../layouts/pie.ejs %>
